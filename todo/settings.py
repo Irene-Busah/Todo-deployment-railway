@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yb_ir%5w7odhc$eu_yds*a7!5_282!hbs(y^nu3olz5y_$)e+z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -124,8 +124,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+CSRF_TRUSTED_ORIGINS = ['https://web-production-1f08.up.railway.app/']
+# LOGIN_URL = 'login_view'
 
-LOGIN_URL = 'login_view'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
