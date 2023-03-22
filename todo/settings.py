@@ -125,7 +125,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 CSRF_TRUSTED_ORIGINS = ['https://web-production-1f08.up.railway.app/']
-# LOGIN_URL = 'login_view'
+LOGIN_URL = 'login_view'
 
 
 # Default primary key field type
